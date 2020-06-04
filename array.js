@@ -74,16 +74,22 @@ var napi = ['zoro', 'war', 'bobi', 2, 4, true, false , 'kucing', ' kam', 'semua'
    	// console.log(acak.join(' '));
    }
 // 2 pengunaan push dan pop [bekerja pada element terakhir pada array]
-var arr = ['bobi', 'war', 'zoro'];
+var arr = ['bobi', 'war', 'zoro', ' true', 'false'];
  for (i = 0; i <= arr.length; i++){
 
  }
-arr.push('Mantap', 'sekali', 'Ganteng');
+// arr.push('Boolean', 'False', 'True');
 // 3 pengunaan pop menghapus element terakhir pada array
 arr.pop();
 // 4 pengunaan shift dan unshift [bekerja pada element terakhir pada array]
 //menambah di awal element
 arr.unshift('pace');
-//shift menghilangkan element pertama pada array
+//shift menghilangkan element pertama pada array 
 arr.shift();
+//Pengunaan Slice dan Splice untuk menembhkan element pada array dari Tengah RUMUSNYA [indexAwal, mauDihapusBerapa,mauDItambahelementapa]
+arr.splice(2, 0, 'Waramber');
+//membuat array baru dan mengambil element array ke dalamnya [slice awal dan akhir]
+arr2 = arr.slice(1,4)
 console.log(arr.join(' '));
+// console.log(arr2.join(' '));
+
