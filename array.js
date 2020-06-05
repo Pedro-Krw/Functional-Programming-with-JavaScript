@@ -52,7 +52,7 @@ var insos = ['pinang', 'sirih', 'kapur', true, false];
 insos.forEach(function(e) {
     console.log(e);
 });
-
+//Pengunaan Method sort untuk Mengurutkan array
 var bilangan = [2,4,5,7,8,3,1,0,10,9];
 bilangan.sort(function(a,b){
 	 return a-b;
