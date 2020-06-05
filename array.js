@@ -16,7 +16,7 @@ var napi = ['zoro', 'war', 'bobi', 2, 4, true, false , 'forEach', 'Boolean', 'Fu
   	 }
   	 return nama;
   }
-   // method pada array 
+  // method pada array 
  var acak = ['siapa', 10,'saja', 12,'yang', 22,'datang', 4,'ke',0, 'sa', 'punya', 'rumah'];
 // 1 pengunaan join untuk mengabungkan beberapa element menjadi string
    for (b = 0; b < acak.length; b++){
@@ -57,4 +57,10 @@ var bilangan = [2,4,5,7,8,3,1,0,10,9];
 bilangan.sort(function(a,b){
 	 return a-b;
 })
-console.log(bilangan.join(' '))
+console.log(bilangan.join(' '));
+
+var kamu = [1,2,10,5,20,3,6,8,4];
+ var kamu2 = kamu.filter(function(a){
+ 	return a < 4;
+ })
+ console.log(kamu2.join(' '));
